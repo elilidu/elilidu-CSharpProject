@@ -23,6 +23,66 @@ namespace HelloWorld
             Console.WriteLine("How many hour did you study today ?");
             int studyhour = Console.ReadLine(); // Reading study hour and assign the Text value on studyhour identifyer
             Console.WriteLine("Thank you for your answers !");
+            // Adding two number and display the result
+            int num1 = 5;
+            int num2 = 7;
+            int total = num1 + num2;
+            Console.WriteLine("The sum is  " + total);
+
+            // Subtract two number and display the result
+            int num3 = 5;
+            int num4 = 7;
+            int diff = num1 - num2;
+            Console.WriteLine("The differnce is  " + diff);
+
+            // Multiple two number and display the result
+            int num5 = 5;
+            int num6 = 7;
+            int mul = num1 + num2;
+            Console.WriteLine("The productis  " + mul);
+
+            // Divided a number and display the result
+            double num7 = 5.0;
+            double num8 = 7.0;
+            double div = num2 / num1;
+            Console.WriteLine("Division is  " + div);
+            Console.ReadLine();
+
+            //Takes an input from the user, multiplies it by 50 and display the result
+            Console.WriteLine("enter the number larger than 10,000,000");
+            string userinput = Console.ReadLine();
+            long mul1 = long.Parse(userinput) * 50;
+            Console.WriteLine("The resulte is" + mul1);
+            Console.ReadLine();
+
+            //Takes an input from the user, adds 25 and display the result
+            Console.WriteLine("enter any Integetr number");
+            string usernum = Console.ReadLine();
+            long mul2 = long.Parse(usernum) * 25;
+            Console.WriteLine("The resulte is" + mul2);
+            Console.ReadLine();
+
+            //Takes an input from the user, divides it by 12.5 and display the resulte
+            Console.WriteLine("enter any number");
+            string usernum2 = Console.ReadLine();
+            Double div1 = Double.Parse(usernum2) / 12.5;
+            Console.WriteLine("The resulte is" + div1);
+            Console.ReadLine();
+
+            //Takes an input from the user, checks if it is greater than 50 and diplay the resulte
+            Console.WriteLine("enter any number");
+            string usernum3 = Console.ReadLine();
+            bool isLargeNum = int.Parse(usernum3) > 50;
+            Console.WriteLine(isLargeNum.ToString());
+            Console.ReadLine(); */
+
+            //Takes an input from the user, divides it by 7 and display the remainder
+            Console.WriteLine("enter any Integetr number");
+            string usernum4 = Console.ReadLine();
+            long num = long.Parse(usernum4) % 7;
+            Console.WriteLine("The remender is  " + num);
+
+            Console.ReadLine();
         }
   }
 }

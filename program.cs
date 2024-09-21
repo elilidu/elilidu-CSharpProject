@@ -84,7 +84,7 @@ namespace HelloWorld
 
            //Read Age, DUI and number of speed ticket then if he qualified all criteria
            // display true if not so, display false
-            Console.WriteLine("What is your age?");
+           /* Console.WriteLine("What is your age?");
             int age= Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Have you ever had a DUI Answer yes or no?");
             string Console.ReadLine();
@@ -95,6 +95,73 @@ namespace HelloWorld
             Console.WriteLine(qual);
             Console.ReadLine();
 
-        }
+            //Branching demo if/else statements
+            if(1==1)
+            {
+                Console.WriteLine("1 equals 1!");
+            }
+            else
+            {
+                Console.WriteLine("1 dose not equals 1");
+            }
+
+            //else if statement
+            string name = "Adam";
+            if (name == "Jesse")
+            {
+                Console.WriteLine("Your name is Jesse");
+            }
+            else if(name == "Brett")
+            {
+                Console.WriteLine("Your name is not Jesse");
+            }
+            else
+            {
+                Console.WriteLine("Your name is not Jesse. Your name is nit Brett");
+            }
+
+            //Ternery operator demo
+            int num1 = 7;
+            int num2 = 12;
+
+            string resualt = num1 > num2 ? "num1 is greater than num2" : "num1 is not greater than num2";
+            Console.WriteLine(resualt);
+            */
+            
+            
+            
+            
+            Console.WriteLine("Welcome to Package Express. Please follow the instructions below");
+           
+            Console.WriteLine("Pleas Enter your  package Weight");
+            int Pacweight = Convert.ToInt32(Console.ReadLine());
+
+            if (pacweight >50 )
+            {
+                Console.WriteLine("Package too big to be shipped via Package Express.");
+            }
+                else 
+                {
+                    Console.WriteLine("Pleas Enter your  package width");
+                    int Pacwidth = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Pleas Enter your  package height");
+                    int Pacheigh = Convert.ToInt32(Console.ReadLine());
+
+                    Console.WriteLine("Pleas Enter your  package length");
+
+                    if (Pacwidth > 50 && Pacheigh > 50 && Paclength > 50)
+                    {
+                        Console.WriteLine("Package too big to be shipped via Package Express.");
+                    }
+                    else
+                    {
+                        int result = (Pacwidth * Pacheigh * Paclength) * Pacweight / 100;
+                        Console.WriteLine("Your estimated total for shipping this package is  ." +"$"+ result + "\n Thank You!");
+                    }
+
+                 }
+           
+    }
   }
 }

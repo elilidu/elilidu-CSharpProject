@@ -82,12 +82,15 @@ namespace HelloWorld
          long num = long.Parse(usernum4) % 7;
          Console.WriteLine("The remender is  " + num);*/
 
+           //Read Age, DUI and number of speed ticket then if he qualified all criteria
+           // display true if not so, display false
             Console.WriteLine("What is your age?");
             int age= Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Have you ever had a DUI Answer yes or no?");
-            int ans Console.ReadLine();
-            string nuOfTibker=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Qualifide for insuranves?");
+            string Console.ReadLine();
+            Console.WriteLine("How many speed tickets do you have?");
+            int nuOfTibker=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Qualifide for insurance?");
             bool qual = (age>15) && !ans)&& (nuOfTibker<=3);
             Console.WriteLine(qual);
             Console.ReadLine();

@@ -139,6 +139,7 @@ namespace HelloWorld
             if (pacweight >50 )
             {
                 Console.WriteLine("Package too big to be shipped via Package Express.");
+                Console.WriteLine(resualt);
             }
                 else 
                 {
@@ -153,15 +154,77 @@ namespace HelloWorld
                     if (Pacwidth > 50 && Pacheigh > 50 && Paclength > 50)
                     {
                         Console.WriteLine("Package too big to be shipped via Package Express.");
+                        Console.WriteLine(resualt);
                     }
                     else
                     {
                         int result = (Pacwidth * Pacheigh * Paclength) * Pacweight / 100;
                         Console.WriteLine("Your estimated total for shipping this package is  ." +"$"+ result + "\n Thank You!");
+                        Console.WriteLine(resualt);
                     }
 
-                 }
-           
+                }
+
+            int day = 4;
+            switch (day)
+            {
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 3:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+                case 6:
+                    Console.WriteLine("Saturday");
+                    break;
+                case 7:
+                    Console.WriteLine("Sunday");
+                    break;
+            }
+
+            //while loop and display 1 up to 10
+            int num = 1;
+            while (num <= 10)
+            {
+                Console.WriteLine(num);
+                num++;
+            }
+
+            //do while loop and show 10 up to 0
+            int num2 = 10;
+            do
+            {
+                Console.WriteLine(num2);
+                num2--;
+            }
+            while (num2 > 0);
+
+            // String Concatenates
+            string string2 = "String";
+            string string3 = "Concatenation Illustration";
+            Console.WriteLine("This is" + string2 + string3);
+
+            //Changing string to UPPERCASE
+            string name = "Hi jone";
+            Console.WriteLine(name.ToUpper());
+
+            // String bulder object
+            StringBuilder Mystr = new StringBuilder();
+            Mystr.Append("It is used for dynamic string manipulation, " +
+                "such as building strings from many smaller strings or " +
+                "appending new characters to an existing string.");
+            Console.WriteLine(Mystr);
+            Console.ReadLine();
+
+
+        }
     }
-  }
-}
